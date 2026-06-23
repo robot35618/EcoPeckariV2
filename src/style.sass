@@ -1,0 +1,694 @@
+$main: #006F44
+$lightishMain: #DAF1D4
+
+@font-face 
+    font-family: 'roboto'
+    src: url("../../fonts/RobotoSlab-VariableFont_wght.woff2") format('woff2')
+    font-weight: 100 900
+    font-style: Bold
+
+body
+    font-family: 'roboto', sans-serif
+
+.container
+    width: 1440px
+    margin: 0 auto
+
+    @media (max-width: 720px)
+        width: 100%
+        overflow-x: hidden
+
+    @media (max-width: 360px)
+        width: 100%
+        overflow-x: hidden
+
+nav
+    background: #006F44
+    height: 144px
+    display: flex
+
+    @media (max-width: 720px)
+        height: auto
+        flex-direction: column
+        align-items: center
+        padding: 16px
+        gap: 10px
+
+    @media (max-width: 360px)
+        height: auto
+        flex-direction: column
+        align-items: center
+        padding: 12px 8px
+        gap: 8px
+
+.nav
+    background: #006F44
+    display: flex
+    flex-direction: column
+
+    @media (max-width: 720px)
+        width: 100%
+        align-items: center
+
+    @media (max-width: 360px)
+        width: 100%
+        align-items: center
+
+    &__number
+        border-radius: 13px
+        margin-top: 9px
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #81BF05
+        background: #FFF
+        width: 267px
+        height: 25px
+        margin-left: 727px
+
+        @media (max-width: 720px)
+            margin-left: 0
+            width: 220px
+
+        @media (max-width: 360px)
+            margin-left: 0
+            width: 100%
+            font-size: 13px
+
+    &__buttons
+        display: flex
+        margin-left: 231px
+        align-items: center
+        gap: 16px
+
+        @media (max-width: 720px)
+            margin-left: 0
+            justify-content: center
+            flex-wrap: wrap
+
+        @media (max-width: 360px)
+            margin-left: 0
+            justify-content: center
+            flex-wrap: wrap
+            gap: 8px
+
+        &-buttonL
+            margin-top: 32px
+            list-style: none
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 30px
+
+            @media (max-width: 720px)
+                margin-top: 12px
+                gap: 12px
+                flex-wrap: wrap
+
+            @media (max-width: 360px)
+                margin-top: 8px
+                gap: 8px
+                flex-wrap: wrap
+
+        &-button
+            display: flex
+            justify-content: center
+            align-items: center
+            background: $lightishMain
+            color: $main
+            border-radius: 14px
+            width: 169px
+            height: 46px
+
+            @media (max-width: 720px)
+                width: 130px
+                height: 40px
+                font-size: 14px
+
+            @media (max-width: 360px)
+                width: 140px
+                height: 38px
+                font-size: 12px
+
+.videoSection
+    width: 100%
+    height: 720px
+    overflow: hidden
+
+    @media (max-width: 720px)
+        height: 400px
+
+    @media (max-width: 360px)
+        height: 220px
+
+    &__video
+        width: 100%
+        height: 100%
+        object-fit: cover
+        display: block
+
+.liner
+    width: auto
+    height: 6px
+    background: linear-gradient(to bottom, #1AFF00, #C8DF00)
+
+.aboutUs
+    margin-left: 140px
+    width: 1160px
+    display: flex
+    justify-content: cente
+    align-items: center
+    flex-direction: column
+
+    @media (max-width: 720px)
+        width: 100%
+        margin-left: 0
+        padding: 0 24px
+        box-sizing: border-box
+
+    @media (max-width: 360px)
+        width: 100%
+        margin-left: 0
+        padding: 0 12px
+        box-sizing: border-box
+
+    &__text
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 50px
+        width: 366px
+        height: 150px
+
+        @media (max-width: 720px)
+            font-size: 36px
+            width: auto
+            height: auto
+            padding: 20px 0
+
+        @media (max-width: 360px)
+            font-size: 28px
+            width: auto
+            height: auto
+            padding: 16px 0
+
+    &__production
+        margin-top: 110px
+        font-size: 26px
+        display: flex
+        text-align: right
+        align-items: center
+        flex-direction: row
+        margin-bottom: 53px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        @media (max-width: 720px)
+            width: 296px
+            text-align: right
+            margin-top: 30px
+            flex-direction: row
+            font-size: 14px
+            margin-bottom: 20px
+            align-items: flex-start
+            width: 100%
+
+        &-picture
+            width: 367px
+            height: 375px
+            border-radius: 10px
+            border: 2px solid $main
+            margin-left: 30px
+
+            @media (max-width: 720px)
+                margin-left: 8px
+                flex-shrink: 0
+                width: 134px
+                height: 500px
+                object-fit: cover
+
+    &__company
+        margin-top: 20px
+        align-items: center
+        font-size: 26px
+        display: flex
+        flex-direction: row
+        display: flex
+        justify-content: center
+        align-items: center
+
+        @media (max-width: 720px)
+            text-align: left
+            flex-direction: row
+            font-size: 14px
+            align-items: flex-start
+            gap: 12px
+            width: 100%
+
+        &-picture
+            border-radius: 10px
+            border: 2px solid $main
+            margin-right: 30px
+            width: 367px
+            height: 375px
+
+            @media (max-width: 720px)
+                margin-right: 8px
+                flex-shrink: 0
+                width: 130px
+                height: 500px
+                object-fit: cover
+
+.Outliner
+    text-align: center
+    font-size: 50px
+    color: $main
+
+    @media (max-width: 720px)
+        font-size: 36px
+
+    @media (max-width: 360px)
+        font-size: 26px
+
+    &__smaller
+        font-size: 30px
+        color: $main
+        margin-bottom: 20px
+
+        @media (max-width: 720px)
+            font-size: 22px
+
+        @media (max-width: 360px)
+            font-size: 18px
+
+.Products
+    margin-left: 130px
+    font-size: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin-bottom: 30px
+
+    @media (max-width: 720px)
+        font-size: 16px
+        padding: 0 24px
+        box-sizing: border-box
+
+    @media (max-width: 360px)
+        font-size: 14px
+        padding: 0 12px
+        box-sizing: border-box
+
+    &__Types
+        margin-top: 50px
+        display: flex
+        width: 100%
+
+        @media (max-width: 720px)
+            flex-direction: row
+            align-items: flex-start
+            margin-top: 20px
+            gap: 12px
+            justify-content: center
+
+    &__Bran
+        margin-left: 168px
+        display: flex
+        align-items: center
+        flex-direction: column
+
+        @media (max-width: 720px)
+            margin-left: 0
+            width: 50%
+            font-size: 13px
+
+        img
+            @media (max-width: 720px)
+                width: 100%
+                height: auto
+
+        &-text
+            margin-top: 31px
+            text-align: center
+            margin-bottom: 20px
+
+            @media (max-width: 720px)
+                margin-top: 12px
+                font-size: 13px
+
+    &__Flour
+        display: flex
+        align-items: center
+        flex-direction: column
+
+        @media (max-width: 720px)
+            width: 50%
+            font-size: 13px
+
+        img
+            @media (max-width: 720px)
+                width: 100%
+                height: auto
+
+        &-text
+            margin-top: 31px
+            text-align: center
+            margin-bottom: 20px
+
+            @media (max-width: 720px)
+                margin-top: 12px
+                font-size: 13px
+
+.Partnership
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    @media (max-width: 720px)
+        padding: 0 24px
+        box-sizing: border-box
+
+    @media (max-width: 360px)
+        padding: 0 12px
+        box-sizing: border-box
+
+.Offers
+    display: flex
+    text-align: center
+
+    @media (max-width: 720px)
+        flex-direction: column
+        align-items: center
+        gap: 24px
+
+    @media (max-width: 360px)
+        flex-direction: column
+        align-items: center
+        gap: 16px
+
+.forWho
+    margin-left: 210px
+
+    @media (max-width: 720px)
+        margin-left: 0
+
+    @media (max-width: 360px)
+        margin-left: 0
+
+.TOPFOOD
+    margin-left: 168px
+    margin-right: 75px
+
+    @media (max-width: 720px)
+        margin-left: 0
+        margin-right: 0
+
+    @media (max-width: 360px)
+        margin-left: 0
+        margin-right: 0
+
+.Russian-sea
+    margin-right: 75px
+
+    @media (max-width: 720px)
+        margin-right: 0
+
+    @media (max-width: 360px)
+        margin-right: 0
+
+.Partners
+    margin-top: 60px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    @media (max-width: 720px)
+        margin-top: 30px
+        width: 100%
+
+    @media (max-width: 360px)
+        margin-top: 20px
+        width: 100%
+
+    &__list
+        margin-top: 48px
+        margin-bottom: 90px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 16px
+
+        @media (max-width: 720px)
+            margin-top: 30px
+            margin-bottom: 40px
+            gap: 20px
+
+        @media (max-width: 360px)
+            margin-top: 20px
+            margin-bottom: 30px
+            gap: 12px
+
+        img
+            @media (max-width: 720px)
+                max-width: 140px
+                height: auto
+
+            @media (max-width: 360px)
+                max-width: 120px
+                height: auto
+
+    &__moto
+        text-align: center
+        margin-bottom: 85px
+
+        @media (max-width: 720px)
+            margin-bottom: 40px
+            font-size: 18px
+
+        @media (max-width: 360px)
+            margin-bottom: 24px
+            font-size: 15px
+
+.Contacts
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    @media (max-width: 720px)
+        padding: 0 24px
+        box-sizing: border-box
+        width: 100%
+
+    @media (max-width: 360px)
+        padding: 0 12px
+        box-sizing: border-box
+        width: 100%
+
+    &__map
+        border: 3px solid $main
+        margin-bottom: 60px
+        border-radius: 3px
+        margin-left: 10px
+
+        width: 1160px
+        @media (max-width: 720px)
+            margin-bottom: 30px
+
+            script, & > *
+                width: 100% 
+
+        @media (max-width: 360px)
+            margin-bottom: 20px
+
+    &__info
+        display: flex
+        flex-direction: row
+        gap: 30px
+
+        @media (max-width: 720px)
+            flex-direction: column
+            align-items: center
+            gap: 20px
+            width: 100%
+
+        @media (max-width: 360px)
+            flex-direction: column
+            align-items: center
+            gap: 14px
+            width: 100%
+
+.ContactItem
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 8px
+
+    &__label
+        text-align: center
+        font-size: 32px
+        list-style: none
+
+        @media (max-width: 720px)
+            font-size: 22px
+
+        @media (max-width: 360px)
+            font-size: 18px
+
+    &__box
+        border: 3px solid $main
+        width: 267px
+        height: 82px
+        border-radius: 28px
+        list-style: none
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        padding: 8px
+        margin-bottom: 30px
+
+        @media (max-width: 720px)
+            width: 220px
+            font-size: 14px
+
+        @media (max-width: 360px)
+            width: 100%
+            max-width: 300px
+            height: auto
+            min-height: 60px
+            font-size: 13px
+            padding: 10px
+
+.Footer
+    background: $main
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+    padding: 40px 140px
+    gap: 60px
+
+    @media (max-width: 720px)
+        flex-direction: column
+        align-items: center
+        padding: 30px 24px
+        gap: 30px
+
+    @media (max-width: 360px)
+        flex-direction: column
+        align-items: center
+        padding: 20px 12px
+        gap: 20px
+
+    &__title
+        color: $lightishMain
+        font-size: 28px
+        margin-bottom: 16px
+
+        @media (max-width: 720px)
+            font-size: 22px
+            text-align: center
+
+        @media (max-width: 360px)
+            font-size: 18px
+            text-align: center
+
+    &__form
+        display: flex
+        flex-direction: column
+        gap: 10px
+
+        @media (max-width: 720px)
+            width: 100%
+
+        @media (max-width: 360px)
+            width: 100%
+
+    &__inputs
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 8px
+
+        @media (max-width: 360px)
+            grid-template-columns: 1fr
+
+    input, textarea
+        background: $lightishMain
+        border: none
+        border-radius: 4px
+        padding: 6px 10px
+        font-size: 14px
+        color: $main
+        outline: none
+
+        @media (max-width: 360px)
+            font-size: 13px
+            padding: 8px 10px
+
+    textarea
+        grid-column: 1 / -1
+        height: 80px
+        resize: none
+
+    &__contacts
+        color: $lightishMain
+        display: flex
+        flex-direction: column
+        gap: 16px
+        text-align: center
+        h3
+            font-weight: 700
+            font-size: 20px
+        p
+            font-size: 16px
+
+    &__nav
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 12px
+
+
+    &__navButton
+        background: $lightishMain
+        color: $main
+        border-radius: 14px
+        text-decoration: none
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 169px
+        height: 46px
+        font-size: 16px
+
+        @media (max-width: 720px)
+            input, textarea
+                width: 100%
+            &__contacts
+                width: 100%
+            &__nav
+                width: 100%
+            &__navButton
+                width: 100%
+
+        @media (max-width: 360px)
+            input, textarea
+                width: 100%
+            &__contacts
+                width: 100%
+                h3
+                    font-size: 17px
+                p
+                    font-size: 14px
+            &__nav
+                grid-template-columns: 1fr
+                width: 100%
+            &__navButton
+                width: 100%
+                height: 42px
+                font-size: 14px
+        
