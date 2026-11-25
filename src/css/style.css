@@ -177,8 +177,7 @@ nav {
 .videoSection__video {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 
@@ -273,8 +272,7 @@ nav {
     flex-shrink: 0;
     width: 134px;
     height: 500px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 .aboutUs__company {
@@ -310,8 +308,7 @@ nav {
     flex-shrink: 0;
     width: 130px;
     height: 500px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 

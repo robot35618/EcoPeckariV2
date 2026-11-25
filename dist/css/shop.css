@@ -1,0 +1,55 @@
+/* Стили магазина. Подключается после style.min.css */
+.catalog { width: 1160px; margin: 0 auto; padding: 30px 0 60px; }
+.catalog__tools { display: flex; gap: 16px; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; }
+.catalog__tools input { border: 3px solid #006F44; border-radius: 14px; padding: 10px 16px; font-size: 16px; min-width: 260px; }
+.chip { background: #DAF1D4; color: #006F44; border: 2px solid #006F44; border-radius: 14px; padding: 10px 20px; font-size: 16px; cursor: pointer; }
+.chip.active { background: #006F44; color: #DAF1D4; }
+.catalog__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+.card { border: 3px solid #006F44; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.card h3 { font-size: 20px; color: #006F44; }
+.card__meta { color: #555; font-size: 14px; }
+.card__price { font-size: 22px; font-weight: 700; color: #006F44; }
+.card__stock { font-size: 14px; min-height: 18px; }
+.card__row { display: flex; gap: 10px; }
+.card__row select, .card__row input { padding: 8px; border: 2px solid #006F44; border-radius: 8px; font-size: 15px; }
+.card__row input { width: 70px; }
+
+.btn { background: #006F44; color: #DAF1D4; border: none; border-radius: 14px; padding: 12px 20px; font-size: 16px; cursor: pointer; }
+.btn:disabled { background: #999; cursor: not-allowed; }
+.btn--small { padding: 6px 14px; font-size: 14px; }
+.link { background: none; border: none; color: #006F44; text-decoration: underline; cursor: pointer; }
+
+.cartBtn { position: fixed; right: 20px; bottom: 20px; z-index: 50; background: #006F44; color: #DAF1D4; border: 3px solid #DAF1D4; border-radius: 28px; padding: 14px 22px; font-size: 18px; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.3); }
+
+.modal { position: fixed; inset: 0; z-index: 100; background: rgba(0,0,0,.55); display: flex; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; }
+.modal[hidden] { display: none; }
+.modal__box { position: relative; background: #fff; color: #222; width: 800px; max-width: 100%; box-sizing: border-box; padding: 30px 24px; border-radius: 20px; }
+.modal h2 { color: #006F44; margin-bottom: 16px; }
+.modal__close { position: absolute; top: 8px; right: 16px; font-size: 32px; background: none; border: none; cursor: pointer; color: #006F44; }
+.modal__box .btn { margin-top: 10px; }
+.form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0; }
+.form input, .form select { padding: 10px; border: 2px solid #006F44; border-radius: 8px; font-size: 15px; }
+.form__err { color: #c00; min-height: 20px; }
+
+.tbl { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #006F44; padding: 8px 10px; text-align: left; font-size: 15px; vertical-align: top; }
+th { background: #DAF1D4; color: #006F44; }
+td input[type=number] { width: 80px; padding: 4px; }
+
+.admin { width: 1160px; margin: 0 auto; padding: 30px 0 60px; }
+.admin[hidden] { display: none; }
+.admin__sum { display: grid; gap: 8px; margin-bottom: 30px; font-size: 18px; }
+
+#toast { position: fixed; left: 50%; bottom: 80px; transform: translateX(-50%); background: #006F44; color: #DAF1D4; padding: 12px 22px; border-radius: 14px; opacity: 0; pointer-events: none; transition: opacity .25s; z-index: 200; }
+#toast.show { opacity: 1; }
+
+.Footer__admin { color: #DAF1D4; font-size: 13px; opacity: .8; }
+
+@media (max-width: 720px) {
+  .catalog, .admin { width: 100%; padding-left: 24px; padding-right: 24px; box-sizing: border-box; }
+  .form { grid-template-columns: 1fr; }
+  .cartBtn { font-size: 15px; padding: 10px 16px; }
+}
+
+.buy { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 16px; font-size: 16px; }
